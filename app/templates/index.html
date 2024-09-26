@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title%}Budget Tracker{% endblock %}
+{% block content %}
+    <div class="container mt-5 goal-container">
+        {% if goal_name %}
+            <h4 class="progress-h4">Your progress</h4>
+            <h3>{{ goal_name }}</h3>
+            <div class="progress mb-3 position-relative">
+                <div class="progress-bar" role="progressbar" style="width: {{ (progress / goal_value) * 100 }}%" aria-valuenow="{{ (progress / goal_value) * 100 }}" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+            {% if (total_income - total_expense) >= goal_value %}
+                <p>You have reached your goal of £{{ goal_value }}</p>
+            {% else %}      
+                <p>£{{ goal_value - progress }} more to complete</p>
+            {% endif %}
+        {% else %}
+            <h3>No current goal to reach - go to the goal page to add.</h3>
+        {% endif %}
+    </div>
+
+    <div class="container mt-5">
+        <h2>Overview</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="overview-text">Category</th>
+                    <th class="overview-text">Amount (£)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if total_income == 0 %}
+                    <tr>
+                        <td class="overview-text">Total Income</td>
+                        <td class="overview-text">No income</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td class="overview-text">Total Income</td>
+                        <td class="overview-text">{{ total_income }}</td>
+                    </tr>
+                {% endif %}
+                {% if total_expense == 0 %}
+                    <tr>
+                        <td class="overview-text">Total Expense</td>
+                        <td class="overview-text">No expenses</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td class="overview-text">Total Expense</td>
+                        <td class="overview-text">{{ total_expense }}</td>
+                    </tr>
+                {% endif %}
+                <tr>
+                    <td class="overview-text">Your Balance</td>
+                    <td class="overview-text">{{ total_income - total_expense }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+{% endblock %}

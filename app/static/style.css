@@ -1,0 +1,105 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline;
+}
+
+.total-heading {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-heading button {
+    margin-left: auto;
+    height: 50%;
+}
+
+.flash-message {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-h4 {
+    opacity: 75%;
+}
+
+.progress {
+    height: 40px;
+}
+
+.progress-bar {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total-heading {
+    font-size: 200%;
+}
+
+.total{ 
+    font-size: 200%;
+}
+
+.goal-container {
+    font-size: 150%;
+}
+
+.overview-text {
+    font-size: 1.5rem;
+}
+
+.btn-primary a{
+    color: white;
+}
+
+@media (max-width: 767px) {
+
+    .input-group-prepend {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .input-group-text {
+        width: 100%;
+    }
+
+    .remove-sign {
+        display: none;
+    }
+
+    body {
+        font-size: 70%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .input-group-prepend {
+        display: inline-block;
+        width: auto;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    .input-group-text {
+        width: auto;
+    }
+}
