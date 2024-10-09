@@ -1,20 +1,16 @@
 # Budget Tracker
 
-A simple budget tracker web application built using HTML, CSS, JavaScript, and Flask. This app helps users manage their finances effectively by tracking income and expenses.
+A simple budget tracker web application to help users manage their finances effectively by tracking income and expenses while having a goal to aim for.
 
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
+![image](https://github.com/user-attachments/assets/986e0736-1ce3-4dfe-82d8-092a5fa6ff31)
 
-## Features
+## Features/usage
 - Track income and expenses
 - Add a goal to reach
 - User-friendly interface
 - Responsive design
 
-## Technologies Used
+## Tech Stack
 - HTML
 - CSS
 - JavaScript
