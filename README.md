@@ -7,11 +7,10 @@ A simple budget tracker web application built using HTML, CSS, JavaScript, and F
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
-- [Usage](#usage)
 
 ## Features
 - Track income and expenses
-- View budget summaries
+- Add a goal to reach
 - User-friendly interface
 - Responsive design
 
@@ -83,8 +82,5 @@ To set up the project on your local machine, follow these steps:
 
 2. **Open your web browser and go to http://127.0.0.1:5000 to view the application.**
 
-## Usage
-
-Upon opening the web application, you can add income, expenses and goal
 
    
